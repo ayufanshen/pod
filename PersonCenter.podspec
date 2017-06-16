@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "PersonCenter/**/*.{h,m}"
 
-  s.public_header_files = "ZCUserInfo.h","ZCPushService.h"
+  # s.public_header_files = "ZCUserInfo.h","ZCPushService.h"
 
   # s.exclude_files = "Classes/Exclude"
 
@@ -131,7 +131,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+    s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PROJECT_DIR)"}
     s.dependency "JSONModel", "~> 1.0"
     s.requires_arc         = true
 
