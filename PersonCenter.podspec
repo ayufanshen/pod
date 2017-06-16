@@ -90,9 +90,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-    s.source_files  = "PersonCenter/**/*.{h,m}"
 
-  # s.public_header_files = "PersonCenter.h"
+  s.source_files  = "PersonCenter/**/*.{h,m}"
+
+  s.public_header_files = "ZCUserInfo.h","ZCPushService.h"
 
   # s.exclude_files = "Classes/Exclude"
 
