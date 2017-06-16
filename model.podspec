@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "model"
-  s.version      = "0.0.1"
+  s.name         = "PersonCenter"
+  s.version      = "0.0.3"
   s.summary      = "test summary"
 
   # This description is used to generate tags and improve search results.
