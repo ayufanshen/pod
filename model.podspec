@@ -90,9 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-    s.source_files  = "Models/*"
-    s.source_files  = "ViewModels/*"
-  # s.source_files  = "ViewController/*"
+    s.source_files  = "PersonCenter/**/*.h"
 
   # s.public_header_files = "PersonCenter.h"
 
