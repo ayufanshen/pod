@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
 
     s.source_files  = "Models/*"
     s.source_files  = "ViewModels/*"
-    s.source_files  = "ViewController/*"
+  # s.source_files  = "ViewController/*"
 
   # s.public_header_files = "PersonCenter.h"
 
