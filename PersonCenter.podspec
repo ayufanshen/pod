@@ -48,13 +48,13 @@ Pod::Spec.new do |s|
 
     end
 
-#s.subspec 'ViewModels' do |ss|
+    s.subspec 'ViewController' do |ss|
 
-#ss.source_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.{h,m}'
-#ss.public_header_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.h'
-# ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
+        ss.source_files = 'PersonCenter/ViewModels/ZCMyAccountViewController.{h,m}'
+        ss.public_header_files = 'PersonCenter/ViewModels/ZCMyAccountViewController.h'
+        #ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
 
-#end
+    end
 
 
 end
