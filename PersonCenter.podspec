@@ -32,13 +32,29 @@ Pod::Spec.new do |s|
   s.dependency "JSONModel"
 
 
-    s.subspec 'ViewModel' do |ss|
+    s.subspec 'ViewModels' do |ss|
 
-    ss.source_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.{h,m}'
-    ss.public_header_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.h'
-    ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
+        ss.source_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.{h,m}'
+        ss.public_header_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.h'
+        ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
 
     end
+
+    s.subspec 'Views' do |ss|
+
+        ss.source_files = 'PersonCenter/View/{ZCMyAccountHelpTableViewCell,ZCMyAccountItemBtn,ZCMyAccountMatterTableViewCell,ZCMyAccountPrivilegeTableViewCell,ZCMyAccountTableHeaderView,ZCMyAccountTableViewCell,ZCMyAccountWalletTableViewCell}.{h,m}'
+        ss.public_header_files = 'PersonCenter/View/{ZCMyAccountHelpTableViewCell,ZCMyAccountItemBtn,ZCMyAccountMatterTableViewCell,ZCMyAccountPrivilegeTableViewCell,ZCMyAccountTableHeaderView,ZCMyAccountTableViewCell,ZCMyAccountWalletTableViewCell}.h'
+        # ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
+
+    end
+
+#s.subspec 'ViewModels' do |ss|
+
+#ss.source_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.{h,m}'
+#ss.public_header_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.h'
+# ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
+
+#end
 
 
 end
