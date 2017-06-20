@@ -91,7 +91,11 @@ Pod::Spec.new do |s|
   #
 
 
-    s.source_files  = "PersonCenter/**/*.{h,m}"
+
+    s.public_header_files = 'PersonCenter/Define.h'
+    s.source_files = 'PersonCenter/Define.h'
+
+  # s.source_files  = "PersonCenter/**/*.{h,m}"
 
   # s.public_header_files = "ZCUserInfo.h","ZCPushService.h"
 
@@ -142,5 +146,11 @@ Pod::Spec.new do |s|
     ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
 
     end
+
+    s.subspec 'Reachability' do |ss|
+        ss.ios.deployment_target = '7.0'
+        ss.source_files = 'PersonCenter/AFNetworkReachabilityManager.{h,m}'
+        ss.public_header_files = 'PersonCenter/AFNetworkReachabilityManager.h'
+end
 
 end
