@@ -8,30 +8,30 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "ZCPersonCenter"
+  s.name         = "PersonCenter"
   s.version      = "0.1.0"
   s.summary      = "个人中心模块"
+
   s.description  = <<-DESC
                     个人中心模块
                    DESC
+
   s.homepage     = "http://www.zuche.com"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author       = { "fanshen" => "fanshen@zuche.com" }
+  s.author             = { "fanshen" => "fanshen@zuche.com" }
   s.platform     = :ios, "7.0"
-  s.source       = {:git => "https://github.com/ayufanshen/pod.git", :tag => s.version,:submodules => true }
-
-  # s.public_header_files = 'ZCPersonCenter/Define.h'
-  # s.source_files = 'ZCPersonCenter/Define.h'
-
-  s.source_files  = "ZCPersonCenter/**/*.{h,m}"
-
+  s.source  = { :git => "https://github.com/ayufanshen/pod.git", :tag => s.version,:submodules => true }
+  s.source_files  = "PersonCenter/**/*.{h,m}"
   s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
   s.dependency "JSONModel"
 
+    s.subspec 'ViewModel' do |ss|
 
-  s.subspec 'ViewModel' do |ss|
-    ss.source_files = 'ZCPersonCenter/ZCMyAccountViewModel.{h,m}'
-    ss.public_header_files = 'ZCPersonCenter/ZCMyAccountViewModel.h'
+    ss.source_files = 'PersonCenter/ZCMyAccountViewModel.{h,m}'
+    ss.public_header_files = 'PersonCenter/ZCMyAccountViewModel.h'
     ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
-  end
+
+    end
+
+
 end
