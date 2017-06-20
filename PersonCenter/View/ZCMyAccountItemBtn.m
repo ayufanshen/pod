@@ -13,6 +13,7 @@
 #import "UIColor+HexString.h"
 #import "UIFont+ZCCustom.h"
 #import "UIColor+ZCCustom.h"
+#import "Define.h"
 
 @interface ZCMyAccountItemBtn ()
 

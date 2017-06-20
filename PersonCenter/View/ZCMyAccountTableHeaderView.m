@@ -13,6 +13,7 @@
 #import "UIFont+ZCCustom.h"
 #import "UIColor+HexString.h"
 #import "UIImage+ZCIconFont.h"
+#import "Define.h"
 
 @interface ZCMyAccountTableHeaderView()
 
