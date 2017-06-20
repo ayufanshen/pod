@@ -18,10 +18,16 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://www.zuche.com"
   s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.author             = { "fanshen" => "fanshen@zuche.com" }
+  s.author       = { "fanshen" => "fanshen@zuche.com" }
   s.platform     = :ios, "7.0"
+  s.requires_arc = true
+
   s.source  = { :git => "https://github.com/ayufanshen/pod.git", :tag => s.version,:submodules => true }
-  s.source_files  = "PersonCenter/**/*.{h,m}"
+
+
+  s.source_files        = "PersonCenter/Define.{h,m}"
+  s.public_header_files = 'PersonCenter/Define.h'
+
   s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
   s.dependency "JSONModel"
 
