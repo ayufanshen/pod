@@ -91,7 +91,8 @@ Pod::Spec.new do |s|
   #
 
 
-  s.source_files  = "PersonCenter/**/*.{h,m}","zucheLib_Networking/**/*.{h,m}"
+  s.source_files  = "PersonCenter/**/*.{h,m}"
+  #,"zucheLib_Networking/**/*.{h,m}"
 
   # s.public_header_files = "ZCUserInfo.h","ZCPushService.h"
 
