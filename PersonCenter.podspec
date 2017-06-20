@@ -139,6 +139,7 @@ Pod::Spec.new do |s|
 
     ss.source_files = 'PersonCenter/ZCMyAccountViewModel.{h,m}'
     ss.public_header_files = 'PersonCenter/ZCMyAccountViewModel.h'
+    ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
 
     end
 
