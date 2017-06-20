@@ -26,6 +26,14 @@
 #import "ZCNotificationDefineHeader.h"
 #import "ZCMyAccountViewModel.h"
 
+#import "Define.h"
+#import "UIColor+HexString.h"
+#import "Masonry.h"
+#import "UIImage+ZCIconFont.h"
+#import "ZCTrackEvent.h"
+#import "ZCRouterManager.h"
+#import "UIColor+ZCCustom.h"
+#import "ZCNetworkManger.h"
 
 #define kMyWalletTableViewCell      @"myWalletTableViewCell"
 #define kPrivilegeTableViewCell     @"privilegeTableViewCell"

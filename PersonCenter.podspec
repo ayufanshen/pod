@@ -132,7 +132,7 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
     s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
-    s.dependency "JSONModel", "~> 1.0"
+    s.dependency "JSONModel","zucheLib_Networking"
     s.requires_arc         = true
 
 end
