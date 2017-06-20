@@ -8,6 +8,12 @@
 
 #import "ZCMyAccountTableHeaderView.h"
 #import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "UIColor+ZCCustom.h"
+#import "UIFont+ZCCustom.h"
+#import "UIColor+HexString.h"
+#import "UIImage+ZCIconFont.h"
+
 @interface ZCMyAccountTableHeaderView()
 
 @property (nonatomic, strong) UIImageView *rightArrowImgView;

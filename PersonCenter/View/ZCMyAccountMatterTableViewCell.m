@@ -7,6 +7,11 @@
 //
 
 #import "ZCMyAccountMatterTableViewCell.h"
+#import "Masonry.h"
+#import "UIColor+ZCCustom.h"
+#import "UIFont+ZCCustom.h"
+#import "UIColor+HexString.h"
+#import "UIImage+ZCIconFont.h"
 
 #define kWidthOfCell (UI_SCREEN_WIDTH)
 #define kWidthOfItem (UI_SCREEN_WIDTH / 4)
