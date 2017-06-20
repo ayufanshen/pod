@@ -283,7 +283,6 @@
     [[ZCNetworkManger sharedManager] POSTWithAction:E_getProof_CountAction
                                          parameters:param
                                             success:^(NSDictionary *result) {
-                                                DDLogVerbose(@"%@",result);
                                                 NSDictionary *reDic   = [result objectForKey:API_Field_Result];
                                                 
                                                 [self.myAccountViewModel initPeccancyModel:reDic];
