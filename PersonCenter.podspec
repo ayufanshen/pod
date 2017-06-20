@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
 
     s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
     s.dependency "JSONModel"
-    s.dependency 'zucheLib_Networking', :git => 'http://10.3.4.127:8888/ios_team/zuchelib_networking.git'
+    s.dependency 'zucheLib_Networking', :git => 'http://10.3.4.127:8888/ios_team/zuchelib_networking.git', :commit => ‘ad38615’
     s.requires_arc         = true
 
 end
