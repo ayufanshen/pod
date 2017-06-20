@@ -20,10 +20,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = {:git => "https://github.com/ayufanshen/pod.git", :tag => s.version,:submodules => true }
 
-  s.public_header_files = 'ZCPersonCenter/Define.h'
-  s.source_files = 'ZCPersonCenter/Define.h'
+  # s.public_header_files = 'ZCPersonCenter/Define.h'
+  # s.source_files = 'ZCPersonCenter/Define.h'
 
-  # s.source_files  = "ZCPersonCenter/**/*.{h,m}"
+  s.source_files  = "ZCPersonCenter/**/*.{h,m}"
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
   s.dependency "JSONModel"
