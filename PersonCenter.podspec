@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
 
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -131,7 +131,8 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-    s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/SourceCode/Utility/**" "$(SRCROOT)/../AutoRental/SourceCode/Models/**"'}
+    s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/SourceCode/Utility/**" "$(SRCROOT)/../AutoRental/SourceCode/Models/**"
+ "$(SRCROOT)/../AutoRental/Supporting\ Files/"'}
     s.dependency "JSONModel", "~> 1.0"
     s.requires_arc         = true
 
