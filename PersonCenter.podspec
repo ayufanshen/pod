@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
 
     s.subspec 'ViewModel' do |ss|
 
-    ss.source_files = 'PersonCenter/ZCMyAccountViewModel.{h,m}'
-    ss.public_header_files = 'PersonCenter/ZCMyAccountViewModel.h'
+    ss.source_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.{h,m}'
+    ss.public_header_files = 'PersonCenter/ViewModels/ZCMyAccountViewModel.h'
     ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
 
     end
