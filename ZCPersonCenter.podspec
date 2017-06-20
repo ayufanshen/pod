@@ -28,9 +28,6 @@ Pod::Spec.new do |s|
   s.source_files        = 'ZCPersonCenter/Define.{h,m}'
   s.public_header_files = 'ZCPersonCenter/Define.h'
 
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
-  s.dependency "JSONModel"
-
 
     s.subspec 'ViewModels' do |ss|
 
@@ -60,6 +57,7 @@ Pod::Spec.new do |s|
 
         ss.source_files = 'ZCPersonCenter/Models/{HelpUrls,PeccancyModel,ZCMyAccountModel}.{h,m}'
         ss.public_header_files = 'ZCPersonCenter/Models/{HelpUrls,PeccancyModel,ZCMyAccountModel}.h'
+        s.dependency "JSONModel"
         #ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
 
     end
