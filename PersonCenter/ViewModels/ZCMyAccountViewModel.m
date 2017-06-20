@@ -14,6 +14,7 @@
 #import "NSString+URLEncode.h"
 #import "NSDictionary+Accessors.h"
 #import "NSObject+ZCUtility.h"
+#import "UIColor+HexString.h"
 
 
 @interface ZCMyAccountViewModel(){
