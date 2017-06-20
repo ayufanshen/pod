@@ -25,16 +25,17 @@ Pod::Spec.new do |s|
   s.source  = { :git => "https://github.com/ayufanshen/pod.git", :tag => s.version,:submodules => true }
 
 
-  s.source_files        = "PersonCenter/Define.{h,m}"
+  s.source_files        = 'PersonCenter/Define.{h,m}'
   s.public_header_files = 'PersonCenter/Define.h'
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
   s.dependency "JSONModel"
 
+
     s.subspec 'ViewModel' do |ss|
 
-    ss.source_files = 'PersonCenter/ViewModel/ZCMyAccountViewModel.{h,m}'
-    ss.public_header_files = 'PersonCenter/ViewModel/ZCMyAccountViewModel.h'
+    ss.source_files = 'PersonCenter/ZCMyAccountViewModel.{h,m}'
+    ss.public_header_files = 'PersonCenter/ZCMyAccountViewModel.h'
     ss.xcconfig = { "HEADER_SEARCH_PATHS" => '"$(SRCROOT)/../AutoRental/**"'}
 
     end
