@@ -9,6 +9,11 @@
 #import "ZCMyAccountItemBtn.h"
 #import "NIAttributedLabel.h"
 #import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "UIColor+HexString.h"
+#import "UIFont+ZCCustom.h"
+#import "UIColor+ZCCustom.h"
+
 @interface ZCMyAccountItemBtn ()
 
 @property (nonatomic, strong) NIAttributedLabel *moneyLbl;
